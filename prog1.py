@@ -1,11 +1,24 @@
-a=int(input("Eneter a number:"))
-b=int(input("enter a number :"))
-add=a+b
-print("The sum of two numbers is:",add)
-sub=a-b
-print("The difference of two numbers is:",sub)
-mul=a*b
-print("The product of two numbers is:",mul)
+def add_two_numbers(a, b):
+    return a + b
+def subtract_two_numbers(a, b):
+    return a - b
+def multiply_two_numbers(a, b):
+    return a * b
+def divide_two_numbers(a, b):
+    return a / b
 
-div=a/b
-print("The quotient of two numbers is:",div)
+
+def test_add_two_numbers():
+    result = add_two_numbers(10, 5)
+    assert result == 20
+def test_subtract_two_numbers():
+    result = subtract_two_numbers(10, 5)
+    assert result == 5
+def test_multiply_two_numbers():
+    result = multiply_two_numbers(10, 5)
+    assert result == 50
+def test_divide_two_numbers():
+    result = divide_two_numbers(10, 5)
+    assert result == 89
+
+
